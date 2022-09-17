@@ -9,5 +9,33 @@
         android:id="@+id/mainFragment"
         android:name="com.example.sqlwithmultipletable.fragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carsFragment"
+        android:name="com.example.sqlwithmultipletable.fragment.CarsFragment"
+        android:label="fragment_cars"
+        tools:layout="@layout/fragment_cars" >
+        <action
+            android:id="@+id/action_carsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/footballFragment"
+        android:name="com.example.sqlwithmultipletable.fragment.FootballFragment"
+        android:label="fragment_football"
+        tools:layout="@layout/fragment_football" />
+    <fragment
+        android:id="@+id/programmingFragment"
+        android:name="com.example.sqlwithmultipletable.fragment.ProgrammingFragment"
+        android:label="fragment_programming"
+        tools:layout="@layout/fragment_programming" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.sqlwithmultipletable.fragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>

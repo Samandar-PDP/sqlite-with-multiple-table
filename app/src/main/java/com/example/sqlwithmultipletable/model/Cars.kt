@@ -25,4 +25,10 @@ class Cars: Serializable {
         this.color = color
         this.price = price
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (other !is Cars) return false
+        return (other.id == this.id && other.name == this.name
+            && other.brand == this.brand && other.price == this.price && other.color == this.color)
+    }
 }
